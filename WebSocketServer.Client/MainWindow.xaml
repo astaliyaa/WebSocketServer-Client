@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <StackPanel>
+            <Button Content="Connect" Click="ConnectButton_Click" Margin="5"/>
+            <RichTextBox x:Name="StatusText" Height="50" IsReadOnly="True" Margin="5"/>
+            <TextBox x:Name="UsernameText" Height="30" Margin="2" Width="270"/>
+            <TextBox x:Name="EmailText" Height="30" Margin="2" Width="270"/>
+            <TextBox x:Name="PasswordText" Height="30" Margin="2" Width="270"/>
+            <Button Content="Send" Click="SendButton_Click" Margin="5"/>
+            <RichTextBox x:Name="OutputText" Height="150" IsReadOnly="True" Margin="5"/>
+        </StackPanel>
     </Grid>
 </Window>
